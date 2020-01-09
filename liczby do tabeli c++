@@ -1,0 +1,16 @@
+int main()
+{
+    string sortowanie;
+    ifstream plik;
+    int tab[6], liczb=0;
+    plik.open("C:\\Users\\jon3k\\Desktop\\sortowanie.txt", ios::in);
+
+    if(plik.good()==false)
+    {
+        cout<<"Nie udalo sie otworzyc pliku";
+    }
+    while(!plik.eof())
+    {
+        plik>>tab[liczb++];
+    }
+    plik.close();
